@@ -50,3 +50,9 @@
         top: 150px;
     }
 }
+#score{
+    color: #000;
+    position: absolute;
+  top: 10px;
+  font-size: 18px;
+}
