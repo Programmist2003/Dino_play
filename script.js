@@ -23,3 +23,17 @@ let isAlive = setInterval(function(){
     }
 }, 10)
 
+// Логика общего счета
+const scoreElement = document.getElementById('score')
+
+let score = 0;
+
+document.addEventListener('keydown',function(event){
+    if (event.code === 'Space'){
+        increaseScore();
+    }
+});
+function increaseScore(){
+    score++;
+    scoreElement.textContent = score;
+}
